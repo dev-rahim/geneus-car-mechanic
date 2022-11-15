@@ -1,0 +1,13 @@
+.Service {
+    border-radius: 5px;
+    background-color: rgba(166, 212, 255, 0.754);
+    /* border: 1px solid burlywood; */
+    padding: 5px;
+
+}
+
+.Service img {
+    border-radius: 5px;
+    width: 100%;
+
+}
