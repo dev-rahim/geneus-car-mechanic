@@ -15,8 +15,8 @@ const Exparts = () => {
         { id: 5, name: 'Ronaldo Bro', img: expert5 },
     ]
     return (
-        <div className='container'>
-            <h2 className='text-info pt-3'>Our Expats</h2>
+        <div className=''>
+            <h2 id='expats' className='text-info pt-3'>Our Expats</h2>
             <div className="row">
                 {
                     experts.map(expart => <Expart key={expart.id} expart={expart} />)
