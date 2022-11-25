@@ -4,6 +4,7 @@ import AuthProvider from './context/AuthProvider';
 import Booking from './Pages/Booking/Booking/Booking';
 import Home from './Pages/Home/Home/Home';
 import Login from './Pages/Login/Login/Login';
+import PrivateRoute from './Pages/Login/PrivateRoute/PrivateRoute';
 // import Service from './Pages/Home/Service/Service';
 // import Services from './Pages/Home/Services/Services';
 import Notfound from './Pages/NotFound/Notfound';
@@ -18,7 +19,9 @@ function App() {
           <Routes>
             <Route path='/' element={<Home />} />
             <Route path='/home' element={<Home />} />
-            <Route path='/booking/:serviceId' element={<Booking />} />
+            <Route element={<PrivateRoute />}>
+              <Route path='/booking/:serviceId' element={<Booking />} />
+            </Route>
             <Route path='/login' element={<Login />} />
             <Route path='*' element={<Notfound />} />
           </Routes>

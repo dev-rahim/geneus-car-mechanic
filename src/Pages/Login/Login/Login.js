@@ -2,7 +2,7 @@ import React from 'react';
 import useAuth from '../../../hooks/useAuth';
 
 const Login = () => {
-    const { user, signInUsingGoogle } = useAuth()
+    const { signInUsingGoogle } = useAuth()
     return (
         <div>
             <h2>Please Login</h2>

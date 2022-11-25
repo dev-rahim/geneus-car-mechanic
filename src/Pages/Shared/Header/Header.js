@@ -11,7 +11,7 @@ const Header = () => {
         <>
             <Navbar collapseOnSelect expand="lg" sticky='top' bg="dark" variant="dark" >
                 <Container>
-                    <Navbar.Brand href="#home">Navbar</Navbar.Brand>
+                    <Navbar.Brand href="#home">Genius Car</Navbar.Brand>
                     <Navbar.Toggle />
                     <Navbar.Collapse className="justify-content-end text-light">
                         <Nav className="ms-auto">
@@ -21,9 +21,9 @@ const Header = () => {
                             {!user.displayName ? <Nav.Link as={HashLink} to="/login">Login</Nav.Link> :
                                 <button className='btn btn-light btn-sm' onClick={logOut}>Sign Out</button>}
                         </Nav>
-                        <Navbar.Text>
-                            Signed in as: {user.displayName && user.displayName}
-                        </Navbar.Text>
+                        {user.displayName && <Navbar.Text>
+                            Signed in as: {user.displayName}
+                        </Navbar.Text>}
                     </Navbar.Collapse>
                     <Nav className="me-auto">
                     </Nav>
