@@ -1,0 +1,26 @@
+.add-service form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.add-service form input,
+textarea {
+    width: 40%;
+    height: 40px;
+    margin-bottom: 10px;
+    outline: 0;
+    border: none;
+    padding: 10px;
+    border-bottom: 2px solid #ddd;
+}
+
+.add-service form input[type=submit] {
+    width: 10%;
+}
+
+.add-service form textarea {
+    height: 75px;
+}

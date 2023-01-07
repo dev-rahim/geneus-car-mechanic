@@ -10,7 +10,7 @@ const useFirebase = () => {
     const auth = getAuth()
 
     const signInUsingGoogle = () => {
-        setIsLoading(true)
+
         const googleProvider = new GoogleAuthProvider();
         signInWithPopup(auth, googleProvider)
             .then(result => {
@@ -35,7 +35,7 @@ const useFirebase = () => {
             setIsLoading(false)
         })
         return unSubscribe;
-    })
+    },)
 
     return {
         user,
